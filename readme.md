@@ -14,4 +14,7 @@
 10. Update the dvc.yaml
 11. run "dvc repro" for running all the stages in pipeline
 
-!["workflow"]("docs\deeep_cnn_workflow.png")
+!["workflow"][def]
+
+
+[def]: docs\deeep_cnn_workflow.png
