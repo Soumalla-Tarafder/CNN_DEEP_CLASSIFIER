@@ -36,7 +36,7 @@ for filepath in list_of_files:
     filepath=Path(filepath)
     filedir,filename=os.path.split(filepath)
     if filedir !="":
-        os.makedirs(filedir,exist_ok=TRUE)
+        os.makedirs(filedir,exist_ok=True)
         logging.info(f"creating directory:{filedir} for file :{filename}")
     
     if(not os.path.exists(filepath) or (os.path.getsize(filepath)==0)):

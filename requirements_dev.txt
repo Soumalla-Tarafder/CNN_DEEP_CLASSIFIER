@@ -13,11 +13,16 @@ joblib
 types-PyYAML
 scipy
 mlflow==1.26.1
+wheel
 -e .
 
 ## Dev requirements
-pytest==7.1.3
-tox==3.25.1
-black==22.8.0
-flake8==5.0.4
-mypy==0.971
+pytest==7.1.3 ##unit and integration test purpose
+tox==3.25.1   ##check for typing error
+black==22.8.0 ##Any other Mistake [like extra space etc.]
+flake8==5.0.4 ##Help to create different environment and test locally
+mypy==0.971   ##Formatting Purpose
+
+
+
+

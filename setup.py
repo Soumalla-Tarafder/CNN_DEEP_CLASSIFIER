@@ -7,7 +7,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "CNN_DEEP_CLASSIFIER"
 AUTHOR_USER_NAME = "Soumalla-Tarafder"
-SRC_REPO = "deepClassifier"
+SRC_REPO = "deepclassifier"
 AUTHOR_EMAIL = "soumallatarafder@gmail.com"
 
 setuptools.setup(
@@ -17,7 +17,7 @@ setuptools.setup(
     author_email=AUTHOR_EMAIL,
     description="A python package for CNN app",
     long_description=long_description,
-    long_description_content="text\markdown",
+    long_description_content="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
