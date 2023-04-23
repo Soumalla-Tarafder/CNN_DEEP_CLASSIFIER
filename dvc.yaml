@@ -38,3 +38,18 @@ stages:
     outs:
       - artifacts/training/model.h5
 
+  evaluation_stage:
+    cmd: python src\deepclassifier\pipeline\stage_05_evaluation_stage
+    deps:
+      - src\deepclassifier\pipeline\stage_05_evaluation_stage
+      - configs/config.yaml
+      - artifacts/data_ingestion/PetImages 
+      - artifacts/prepare_base_model 
+    params:
+      - BATCH_SIZE 
+      - IMAGE_SIZE
+  
+    metrics:
+      - scores.json:
+          cache: false
+

@@ -147,3 +147,5 @@ artifacts/prepare_callbacks/checkpoint_dir/model.h5
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-15-32-29/train/events.out.tfevents.1682244151.MSI.7928.0.v2
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-15-32-29/validation/events.out.tfevents.1682246622.MSI.7928.1.v2
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-16-27-16/train/events.out.tfevents.1682247438.MSI.16812.0.v2
+artifacts/prepare_callbacks/checkpoint_dir/model.h5
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-16-27-16/validation/events.out.tfevents.1682249884.MSI.16812.1.v2
