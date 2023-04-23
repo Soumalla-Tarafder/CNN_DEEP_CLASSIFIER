@@ -137,3 +137,9 @@ dmypy.json
 *.zip
 CNNAPP/
 
+artifacts/prepare_base_model/base_model_updated.h5
+artifacts/prepare_base_model/base_model.h5
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-15-19-16/train/events.out.tfevents.1682243358.MSI.11680.0.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-15-22-01/train/events.out.tfevents.1682243523.MSI.16812.0.v2
+artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-15-27-48/train/events.out.tfevents.1682243870.MSI.17984.0.v2
+artifacts/training/model.h5
