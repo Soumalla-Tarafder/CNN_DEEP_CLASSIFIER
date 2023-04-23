@@ -39,9 +39,9 @@ stages:
       - artifacts/training/model.h5
 
   evaluation_stage:
-    cmd: python src\deepclassifier\pipeline\stage_05_evaluation_stage
+    cmd: python src/deepclassifier/pipeline/stage_05_evaluation_stage
     deps:
-      - src\deepclassifier\pipeline\stage_05_evaluation_stage
+      - src/deepclassifier/pipeline/stage_05_evaluation_stage
       - configs/config.yaml
       - artifacts/data_ingestion/PetImages 
       - artifacts/prepare_base_model 
