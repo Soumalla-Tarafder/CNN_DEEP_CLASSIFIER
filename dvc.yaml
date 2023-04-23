@@ -6,3 +6,35 @@ stages:
       - configs/config.yaml
     outs:
       - artifacts/data_ingestion/PetImages 
+  prepare_based_model:
+    cmd: python src/deepclassifier/pipeline/stage_02_prepare_base_model.py
+    deps:
+      - src/deepclassifier/pipeline/stage_02_prepare_base_model.py  
+      - configs/config.yaml
+    params:
+      - IMAGE_SIZE
+      - INCLUDE_TOP 
+      - CLASSES 
+      - WEIGHTS 
+      - LEARNING_RATE  
+    outs:
+      - artifacts/prepare_base_model 
+        
+
+  training_stage:
+    cmd: python src/deepclassifier/pipeline/stage_04_traning.py
+    deps:
+      - src/deepclassifier/pipeline/stage_04_traning.py
+      - src/deepclassifier/components/prepare_callbacks_config.py
+      - configs/config.yaml
+      - artifacts/data_ingestion/PetImages 
+      - artifacts/prepare_base_model 
+    params:
+      - EPOCHS
+      - BATCH_SIZE 
+      - CLASSES 
+      - IMAGE_SIZE
+      - AUGMENTATION    
+    outs:
+      - artifacts/training/model.h5
+
