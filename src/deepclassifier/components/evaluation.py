@@ -3,7 +3,7 @@ import tensorflow as tf
 import time
 from pathlib import Path
 from deepclassifier.entity import EvaluationConfig
-from src.deepclassifier.utils import *
+from deepclassifier.utils import *
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
         self.config = config
@@ -47,4 +47,4 @@ class Evaluation:
        
     def save_score(self):
         scores = {"loss":self.score[0],"accuracy":self.score[1]}
-        save_json(path=("scores.json"),data=scores)
+        save_json(path=Path("scores.json"),data=scores)

@@ -50,6 +50,6 @@ stages:
       - IMAGE_SIZE
   
     metrics:
-      - scores.json:
-          cache: false
+    - scores.json:
+        cache: false
 
