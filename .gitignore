@@ -1585,3 +1585,4 @@ artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-23-16-27-16/v
 artifacts/prepare_callbacks/checkpoint_dir/model.h5
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-24-05-12-51/train/events.out.tfevents.1682293378.MSI.25928.0.v2
 artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-04-24-05-12-51/validation/events.out.tfevents.1682295721.MSI.25928.1.v2
+artifacts/prepare_callbacks/checkpoint_dir/model.h5
