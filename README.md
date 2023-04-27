@@ -32,3 +32,10 @@ conda config --set env_prompt '({name})'
 14. Dvc Repro  [dvc.lock,.dvcignore Create Autometically and repeat if changes done any]
 
 ![img](https://raw.githubusercontent.com/Soumalla-Tarafder/CNN_DEEP_CLASSIFIER/master/docs/deeep_cnn_workflow.png)
+
+## To Set Mlflow In Sql Database
+
+mlflow server \
+--backend-store-uri sqlite:///mlflow.db \
+--default-artifact-root ./artifacts \
+--host 0.0.0.0 -p 1234

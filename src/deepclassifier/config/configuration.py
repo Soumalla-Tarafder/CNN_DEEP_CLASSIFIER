@@ -87,6 +87,8 @@ class ConfigurationManager:
         evaluation_config = EvaluationConfig(
             path_of_model=config.path_of_model,
             training_data=config.training_data,
+            mlflow_uri="https://dagshub.com/Soumalla-Tarafder/CNN_DEEP_CLASSIFIER.mlflow",
+            all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE 
         )
